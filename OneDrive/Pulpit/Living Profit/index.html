@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>Remontuj z LivingProfit</title>
+	<meta name="description" content="Kompleksowe remonty mieszkań - LivingProfit! Zapraszamy do zapoznania się z ofertą naszej firmy remontowej!">
+	<meta name="keywords" content="remont, remonty, wykończenie wnętrz, wykończenie wnetrz warszawa, warszawa wykonczenie wnetrz">
+	<meta name="author" content="Przemysław Mazanka">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+	
+	
+</head>
+
+<body>
+
+	<header>
+	
+		<nav class="navbar sticky-top navbar-light bg-nav navbar-expand-md ">
+		
+			<a class="navbar-brand d-md-none" href="#"><img src="img/logo.png" width="50" height="40" class="d-md-none mr-1 align-bottom" alt=""> LivingProfit</a>
+		
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		
+			<div class="collapse navbar-collapse" id="mainmenu">
+			
+				<ul class="navbar-nav mx-auto">
+				
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html"> Start </a>
+					</li>
+					
+					<li class="nav-item ">
+						<a class="nav-link" href="oferta.html"> Oferta </a>						
+					</li>
+									
+					<li class="nav-item">
+						<a class="nav-link" href="kontakt.html"> Kontakt </a>
+					</li>
+				
+				</ul>
+					
+			</div>
+		
+		</nav>
+	
+	</header>
+	
+	<main>
+		
+		<section class="description">
+		
+			<div class="container">
+				
+				<header>
+					
+					<h1>
+						<span class="living">LIVING</span><span class="profit">PROFIT</span>
+					</h1>
+					
+					
+										
+				</header>
+				
+				<div class="row">
+						
+						
+				<div class="col-lg-12 p-2">
+				
+						<h2 class="text-center">KIM JESTEŚMY?</h2>
+						
+						<img class="img-fluid float-right mx-2" src="img/mainphoto.jpg" alt="mainphoto">
+						
+						<p class=""> Jesteśmy doświadczonym zespołem z wieloletnią praktyką w budownictwie.
+						Lubimy swoją pracę i czerpiemy satysfakcję z każdego dobrze zrealizowanego projektu.</p>
+						<p>Dążąc do ich osiągnięcia ciągle doskonalimy nasz warsztat pracy i umiejętności – których trzeba wiele, gdyż wymagania Klientów są coraz wyższe i nieszablonowe. Potrafimy je spełniać dzięki elastyczności w pracy i umiejętnościom nabytym w praktyce, dzięki temu każda nasza realizacja może mieć odrębny i wyjątkowy charakter.
+						</p>
+						
+						
+						
+				</div>
+					<div class="col-lg-12 p-2">
+							
+							<h3> Zapraszamy do współpracy! </h3>
+							<a class="text-decoration-none" href="oferta.html">Zapoznaj się z naszą ofertą. </a>
+					</div>				
+					
+					</div>	
+				
+				</div>
+						
+		</section>
+		
+	</main>
+	
+	<footer class="page-footer">
+	
+	<div class="footer-copyright text-center py-3">&copy; Copyright LivingProfit 2020
+		</div>
+	</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	
+	<script src="js/bootstrap.min.js"></script>
+	
+	<script>
+		<!-- gdy dok jest wczytany uruchom funkcje  --!>
+	$(document).ready(function() {
+	<!-- wartosc top navigacji --!>
+	var NavY = $('.navbar').offset().top;
+	 
+	var stickyNav = function(){
+	<!-- wartosc top aktualnej wartosci strony --!>
+	var ScrollY = $(window).scrollTop();
+		  <!-- jesli przewiniemy wiecej niz wartosc top .navbar wlaczamy klase sticky  || w przeciwnym wypadku wylaczamy klase sticky --!>
+	if (ScrollY > NavY) { 
+		$('.navbar').addClass('sticky');
+	} else {
+		$('.navbar').removeClass('sticky'); 
+	}
+	};
+	 <!-- wlaczamy funkcje po wczytaniu strony --!>
+	stickyNav();
+	 <!-- i przy kazdym scrollowaniu --!>
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+	
+</body>
+</html>
